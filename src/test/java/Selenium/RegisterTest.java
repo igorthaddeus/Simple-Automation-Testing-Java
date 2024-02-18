@@ -27,6 +27,7 @@ public class RegisterTest extends BaseTest{
 
     @Test
     public void blankFormRegister(){
+        landingPage.goTo();
         RegisterPage rp = landingPage.goToRegisterPage();
         rp.goToRegisterPage();
         Boolean button = driver.findElement(By.cssSelector("button[data-testid='button-submit']")).isEnabled();
