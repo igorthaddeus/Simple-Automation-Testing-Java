@@ -11,16 +11,16 @@ public class BaseTest {
 
     public LandingPage landingPage;
 
-    String fullname = "Igor Thaddeus Sampoerna";
-    String email = "igorthaddeus@yahoo.com";
-    String password = "Igorkeren123@";
+    String fullname = "Testing";
+    String email = "testing@email.com";
+    String password = "testing123";
 
-    String invalidEmail = "igorthaddeus.com";
+    String invalidEmail = "testing.com";
     String invalidPassword = "123";
-    String wrongPassword = "Igorkeren123";
+    String wrongPassword = "testing123";
 
     @BeforeMethod
-    public LandingPage initializeDriver(){
+    public LandingPage initializeDriver() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         landingPage = new LandingPage(driver);
@@ -29,9 +29,7 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
     }
-
-
 }
