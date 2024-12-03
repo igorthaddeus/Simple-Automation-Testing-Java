@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest {
         Thread.sleep(2000);
 
         Assert.assertEquals(
-                driver.findElement(By.xpath("//*[@id=\"__next\"]/div/div[1]/div[1]/div/div/a/div/div")).getText(), "Igor");
+                driver.findElement(By.xpath("//*[@id=\"__next\"]/div/div[1]/div[1]/div/div/a/div/div")).getText(), "Testing");
     }
 
     @Test
